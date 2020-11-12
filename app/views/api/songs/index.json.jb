@@ -1,3 +1,9 @@
-{
-  songs: @songs
-}
+@songs.map do |song|
+  {
+  id: song.id,
+  title: song.title,
+  album: song.album,
+  artist: song.artist,
+  year: song.year
+  }
+end
